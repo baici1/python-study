@@ -4,9 +4,9 @@
 # 4.持久化存储
 
 
-import requests
 import json
 
+import requests
 
 if __name__ == "__main__":
     # 找到指定url
@@ -46,4 +46,4 @@ if __name__ == "__main__":
         all_data_list.append(detail_data)
         # 持久化存储
         with open('./all.json', 'w', encoding='utf-8') as fp:
-            json.dump(all_data_list, fp, ensure_ascii=False)
+            json.dump(all_data_list, fp, ensure_ascii=False)#dump是专门写json,不能乱用
